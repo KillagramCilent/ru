@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Killagram — Modern Desktop Telegram Client</title>
+<meta name="description" content="Killagram — современный десктоп-клиент Telegram. Быстро, безопасно, красиво." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e6eb;
+    --muted: #9aa0a6;
+    --accent: #4c8dff;
+    --accent-soft: rgba(76,141,255,.15);
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+  header {
+    padding: 100px 24px 120px;
+    text-align: center;
+    background: radial-gradient(circle at top, rgba(76,141,255,.15), transparent 60%);
+  }
+  header h1 { font-size: 60px; margin-bottom: 16px; letter-spacing: -1px; }
+  header p { font-size: 20px; color: var(--muted); max-width: 760px; margin: 0 auto 40px; }
+
+  .buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn { padding: 14px 28px; border-radius: 12px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all .2s ease; }
+  .btn.primary { background: var(--accent); color: #fff; box-shadow: 0 10px 30px rgba(76,141,255,.35); }
+  .btn.primary:hover { transform: translateY(-2px); }
+  .btn.secondary { background: transparent; color: var(--text); border: 1px solid var(--accent-soft); }
+
+  section { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+  section h2 { font-size: 40px; margin-bottom: 16px; letter-spacing: -0.5px; }
+  section p.lead { font-size: 18px; color: var(--muted); max-width: 820px; margin: 0 auto; }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
+  .feature { background: var(--card); padding: 28px; border-radius: 18px; border: 1px solid rgba(255,255,255,.04); transition: transform .2s ease, box-shadow .2s ease; }
+  .feature:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(76,141,255,.25); }
+  .feature h3 { margin-top:0; margin-bottom:8px; }
+  .feature p { color: var(--muted); font-size:15px; }
+
+  .screens { display: flex; justify-content: center; margin-top: 48px; }
+  .screen img { width: 100%; max-width: 1024px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); transition: transform .3s ease, box-shadow .3s ease; }
+  .screen img:hover { transform: scale(1.02); box-shadow: 0 12px 36px rgba(76,141,255,0.4); }
+
+  footer { padding: 48px 24px; text-align:center; color: var(--muted); font-size:14px; border-top:1px solid rgba(255,255,255,.05); }
+  footer a { color: var(--accent); text-decoration:none; margin:0 6px; }
+
+  @media(max-width:600px){ header h1{font-size:40px;} section h2{font-size:32px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Killagram</h1>
+  <p>Современный десктоп-клиент Telegram. Высокая производительность, безопасность и красивый интерфейс — для настоящих пользователей.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#download">Скачать</a>
+    <a class="btn secondary" href="#features">Возможности</a>
+  </div>
+</header>
+
+<section id="features">
+  <h2>Возможности Killagram</h2>
+  <p class="lead">Killagram создан для power-user’ов, разработчиков и всех, кому стандартного клиента мало.</p>
+  <div class="features">
+    <div class="feature"><h3>TDLib внутри</h3><p>Официальная библиотека Telegram обеспечивает стабильность, безопасность и полную совместимость.</p></div>
+    <div class="feature"><h3>Высокая производительность</h3><p>Оптимизирован для тысяч чатов, каналов и сообщений без лагов.</p></div>
+    <div class="feature"><h3>Гибкий интерфейс</h3><p>Настраиваемый UI, горячие клавиши и рабочие сценарии под профессионалов.</p></div>
+    <div class="feature"><h3>Конфиденциальность</h3><p>Локальное хранение данных, прозрачная логика и отсутствие сторонней телеметрии.</p></div>
+  </div>
+</section>
+
+<section id="screens">
+  <h2>Интерфейс Killagram</h2>
+  <p class="lead">Современный минималистичный UI, вдохновленный Telegram Desktop.</p>
+  <div class="screens">
+    <div class="screen">
+      <img src="/mnt/data/A_digital_screenshot_showcases_three_interfaces_of.png" alt="Скриншоты Killagram — три интерфейса">
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <h2>Скачать Killagram</h2>
+  <p class="lead">Доступно для всех основных операционных систем.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#">Windows (x64)</a>
+    <a class="btn primary" href="#">Linux</a>
+    <a class="btn primary" href="#">macOS</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Killagram</p>
+  <p><a href="#">GitHub</a> · <a href="#">Документация</a> · <a href="#">Поддержка</a></p>
+</footer>
+
+</body>
+</html>
